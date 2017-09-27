@@ -38,6 +38,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+setTimeout(showSlides(2), 3000);
 
 // Get the modal
 var modal = document.getElementById('myModal');
