@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>LIBRARY SYSTEM</title>
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+</head>
+<body>
+
+<style>
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color: green;
+}
+li{
+float: left;
+}
+li a{
+display:block;
+color:white;
+text-align:center;
+padding: 14px 16px;
+}
+li a:hover{
+background-color:#111;
+}
+</style>
+<ul>
+
+<div class="topnav">
+            <div class="dropdown0">
+<a>&#9776;</a>
+<a href="homepage.html"><strong> LIBRARY SYSTEM </strong></a>
+            <div class="links">
+                <ul>
+                    <li><a class="active"> Home </a></li>
+                    <li><a href="Librarian.html"> Librarian </a></li>
+                    <li><a href="books.html"> Books </a></li>
+                    <li><a href="Student.html"> Student </a></li>
+                    <li><a href="fines.html"> Fines </a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="account">  
+                <div class="dropdown3">
+                    <a>&#128269;</a>
+                    <div class="dropdown-search">
+                        <form method="get" action="/search" id="search">
+                            <input type="text" class="details" placeholder="Search..."/>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown1">
+                    <a>Sign up</a>
+                    <div class="dropdown-signup">
+                        <form>
+                            <input type="email" class="details" placeholder="Your email address" required><br>
+                            <br><input type="text" class="details" placeholder="Username" required><br>
+                            <br><input type="password" class="details" placeholder="Password" required><br>
+                            <br><input type="password" class="details" placeholder="Confirm password" required><br>
+                            <br><input type="submit" class="button" value="Submit"><br>
+                            <br>Register / Create account.
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <a>Login</a>
+                    <div class="dropdown-login">
+                        <form>
+                            <input type="email" class="details" placeholder="Username / Email" required><br>
+                            <br><input type="password" class="details" placeholder="Password" required><br>
+                            <br><input type="checkbox"> Remember me.<br>
+                            <br><input type="submit" class="button" value="Login"><br>
+                            <br><a href="">Forgot password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="form-group">
+<div class="push-right">
+
+</div>
+</div>
+</ul><br>
+<form >
+
+
+<fieldset>
+
+<legend>STUDENT'S REGISTER FORM
+</legend>
+<iframe height="200" width="250"></iframe><br><br>
+
+<label>Name:<br><input type="text" name="name" value="" placeholder="Enter name" size="35" required></label><br><br>
+<label>Student No.:<br><input type="text" name="StudNo" value="" placeholder="Enter student number" size="35" required></label><br><br>
+<label>Course:<br><input type="text" name="course" value="" placeholder="Enter course" size="35" required></label><br><br>
+<label>Date:<br><input type="date" name="Collection date" value="" required></label><br><br>
+<input type="submit">
+<input type="reset">
+
+
+</fieldset>
+</form>
+</body>
+</html>
