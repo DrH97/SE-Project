@@ -42,5 +42,7 @@ background-color:#111;
 
 </fieldset>
 </form>
-</body>
-</html>
+
+<?php
+  @include 'layout/footer.php';
+ ?>

@@ -18,6 +18,11 @@
     <p>Due days:  <input type="text" id="numdays2" placeholder="Return date - Deadline date"></p>
     <p>Fine charged: <input type="text" id="fine" placeholder="Due days * 5/="></p>
 </div><br><br><br>
+
+<?php
+  @include 'layout/footer.php';
+ ?>
+ 
 <script type="text/javascript">
     function GetDays(){
         var rtndt = new Date(document.getElementById("return_date").value);
