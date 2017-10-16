@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Meta Tags for Bootstrap 4 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Bootstrap 4 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" href="css/books.css">
-<script src="Book1.js"></script>
-	
-</head>
-	
-<body>
-	
+<?php
+	include 'layout/navbar.php';
+?>
+
 <div class="slide sparallax slideshow-container">
-	
+
 		<div class="mySlides sfade">
 			<div class="numbertext">1 / 3</div>
 			<img src="images/lib%201.jpg">
@@ -35,20 +24,20 @@
 
 		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
+
 		<div style="text-align:center; position: absolute;
   top: 2%;">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
 		</div>
-</div>	
+</div>
 
 <div class="searchbar">
 	<form action="" >
-		
+
 		<input type="text" name="search" placeholder="Search...">
-		
+
 	</form>
 	<span class="s-icon"><img src="images/ic_search_black_48dp.png"height="24px"></span>
 </div>
@@ -57,51 +46,51 @@
 	<div class="card" id="myCard">
 	  <img id="myImg" src="images/eldest.png" alt="Avatar">
 	  <div class="container">
-		<h4><b>Eldest</b></h4> 
-		<p>Christopher paolini</p> 
+		<h4><b>Eldest</b></h4>
+		<p>Christopher paolini</p>
 	  </div>
 	</div>
-	
+
 	<div class="card">
 	  <img src="images/brisingr.jpg" alt="Avatar">
 	  <div class="container">
-		<h4><b>Brisinger</b></h4> 
-		<p>Christopher Paolini</p> 
+		<h4><b>Brisinger</b></h4>
+		<p>Christopher Paolini</p>
 	  </div>
 	</div>
 
 	<div class="card">
 	  <img src="images/inheritance.jpg" alt="Avatar">
 	  <div class="container">
-		<h4><b>Inheritance</b></h4> 
-		<p>Christopher Paolini</p> 
+		<h4><b>Inheritance</b></h4>
+		<p>Christopher Paolini</p>
 	  </div>
 	</div>
 
 	<div class="card">
 	  <img src="images/eldest.png" alt="Avatar">
 	  <div class="container">
-		<h4><b>Eldest</b></h4> 
-		<p>Christopher paolini</p> 
+		<h4><b>Eldest</b></h4>
+		<p>Christopher paolini</p>
 	  </div>
 	</div>
 
 	<div class="card">
 	  <img src="images/brisingr.jpg" alt="Avatar">
 	  <div class="container">
-		<h4><b>Brisinger</b></h4> 
-		<p>Christopher Paolini</p> 
+		<h4><b>Brisinger</b></h4>
+		<p>Christopher Paolini</p>
 	  </div>
 	</div>
 
 	<div class="card">
 	  <img src="images/inheritance.jpg" alt="Avatar">
 	  <div class="container">
-		<h4><b>Inheritance</b></h4> 
-		<p>Christopher Paolini</p> 
+		<h4><b>Inheritance</b></h4>
+		<p>Christopher Paolini</p>
 	  </div>
 	</div>
-	
+
 	<!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -114,9 +103,9 @@
   <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
 </div>
-	
+
 </div>
-	
+
 <script type="application/javascript">
 	var slideIndex = 1;
 	showSlides(slideIndex);
@@ -133,18 +122,18 @@
 	  var i;
 	  var slides = document.getElementsByClassName("mySlides");
 	  var dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1} 
+	  if (n > slides.length) {slideIndex = 1}
 	  if (n < 1) {slideIndex = slides.length}
 	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none"; 
+		  slides[i].style.display = "none";
 	  }
 	  for (i = 0; i < dots.length; i++) {
 		  dots[i].className = dots[i].className.replace(" active", "");
 	  }
-	  slides[slideIndex-1].style.display = "block"; 
+	  slides[slideIndex-1].style.display = "block";
 	  dots[slideIndex-1].className += " active";
 	}
-	
+
 </script>
 
 </body>

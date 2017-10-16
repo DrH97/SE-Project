@@ -1,8 +1,6 @@
-<html>
-<header>
-
-</header>
-<body>
+<?php
+@include_once 'layout/navbar.php';
+ ?>
 
 <style>
 
@@ -26,20 +24,8 @@ li a:hover{
 background-color:#111;
 }
 </style>
-<ul>
 
-<li><a href="#home">Home</a></li>
-<li><a class="active" href="#student">Student</a></li>
-<li><a href="#librarian">Librarian</a></li>
-<div class="form-group">
-<div class="push-right">
-
-</div>
-</div>
-</ul><br>
 <form >
-
-
 <fieldset>
 
 <legend>STUDENT'S REGISTER FORM

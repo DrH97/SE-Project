@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html class="no-js">
-<head>
-	<title>LIBRARY SYSTEM</title>
-	<link rel="stylesheet" type="text/css" href="navigation.css">
-</head>
+<?php
+require 'links.php';
+?>
+
 <body style="background-color: green">
 <div class="topnav">
             <div class="dropdown0">
@@ -11,15 +9,15 @@
 <a href="homepage.html"><strong> LIBRARY SYSTEM </strong></a>
             <div class="links">
                 <ul>
-                    <li><a class="active"> Home </a></li>
-                    <li><a href="Librarian.html"> Librarian </a></li>
-                    <li><a href="books.html"> Books </a></li>
-                    <li><a href="Student.html"> Student </a></li>
-                    <li><a href="fines.html"> Fines </a></li>
+                    <li><a href="homepage.php"class="active"> Home </a></li>
+                    <li><a href="librarian/index.php"> Librarian </a></li>
+                    <li><a href="books.php"> Books </a></li>
+                    <li><a href="Student.php"> Student </a></li>
+                    <li><a href="fines.php"> Fines </a></li>
                 </ul>
             </div>
             </div>
-            <div class="account">  
+            <div class="account">
                 <div class="dropdown3">
                     <a>&#128269;</a>
                     <div class="dropdown-search">
@@ -55,36 +53,4 @@
                 </div>
             </div>
         </div>
-        <div id="image">
-            <div class="display">
-                <img src="library system.jpg" class="imgHome" alt=""/>
-                <div class="img-text">
-                    <h3> HELLO, WELCOME TO OUR LIBRARY </h3>
-                </div>
-            </div>
-        </div>
-        <div class="tabs">
-
-            <a href=""><h2>Join Us</h2></a>
-            <p>Welcome to our library where every book you need we've got it.</p>
-            <p>Sign up or login to our site by filling in the forms at the top-right corner.</p>
-        </div>
-        <div class="tabs">
-            <a href="details.html"><h2>Contact Us</h2></a>
-            <p>For more information, please click or visit some of the links provided on this website.</p>
-            <p>Connect with us on Facebook, Twitter, Google+ etc. and share your feedback</p>
-        </div>
-        <footer>
-            <p>&#169;2017 Copyright by Us Inc. All Rights Reserved.</p>
-            <p>
-                <a href="">Google+</a>
-                <a href="">Facebook</a>
-                <a href="">Twitter</a>
-                <a href="">Terms of use</a>
-                <a href="">Privacy Policy</a>
-            </p>
-        </footer>
-
-
-</body>
-</html>
+<div class="content" style="background-color: white;">

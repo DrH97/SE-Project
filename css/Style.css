@@ -67,7 +67,7 @@ ul{
     -o-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
 }
-.dropdown0:hover .dropdown-menu, .dropdown1:hover .dropdown-signup, 
+.dropdown0:hover .dropdown-menu, .dropdown1:hover .dropdown-signup,
 .dropdown2:hover .dropdown-login, .dropdown3:hover .dropdown-search,
 .dropdown0:focus, .dropdown2:focus, .dropdown3:focus, .show{
     display: block;
@@ -153,4 +153,77 @@ footer a:hover, footer a:focus, .tabs h2:hover, .tabs h2:focus{
         -webkit-transform: translateY(-10px);
         transfrom: translateY(-10px);
     }
+}
+
+.da-thumbs {
+ float: left;
+    list-style: none outside none;
+
+    padding: 0;
+    position: relative;
+    width: 990px;
+}
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	background: #fff;
+	padding: 3px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+.da-thumbs li a div.da-animate {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* Initial state classes: */
+.da-slideFromTop {
+	left: 0px;
+	top: -100%;
+}
+.da-slideFromBottom {
+	left: 0px;
+	top: 100%;
+}
+.da-slideFromLeft {
+	top: 0px;
+	left: -100%;
+}
+.da-slideFromRight {
+	top: 0px;
+	left: 100%;
+}
+/* Final state classes: */
+.da-slideTop {
+	top: 0px;
+}
+.da-slideLeft {
+	left: 0px;
+}
+.da-thumbs li a div span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }
