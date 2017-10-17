@@ -138,6 +138,5 @@
 
 </script>
 
-<?php
-  @include 'layout/footer.php';
- ?>
+</body>
+</html>
