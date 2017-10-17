@@ -3,11 +3,12 @@ require 'links.php';
 include('librarian/dbcon.php');
 ?>
 
-<body style="width: 100%;">
+<body>
 <div class="topnav">
-            <div class="dropdown0">
-<a>&#9776;</a>
-<a href=""><strong> LIBRARY SYSTEM </strong></a>
+  <div class="dropdown0">
+    <a>&#9776;</a>
+  </div>
+    <a href=""><strong> LIBRARY SYSTEM </strong></a>
             <div class="links">
                 <ul>
                     <li><a href="homepage.php"class="active"> Home </a></li>
