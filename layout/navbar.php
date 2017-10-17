@@ -7,7 +7,7 @@ include('librarian/dbcon.php');
 <div class="topnav">
             <div class="dropdown0">
 <a>&#9776;</a>
-<a href="homepage.html"><strong> LIBRARY SYSTEM </strong></a>
+<a href=""><strong> LIBRARY SYSTEM </strong></a>
             <div class="links">
                 <ul>
                     <li><a href="homepage.php"class="active"> Home </a></li>
