@@ -43,11 +43,16 @@ background-color:#111;
 </fieldset>
 </form>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 </div>
 <?php
   @include 'layout/footer.php';
  ?>
+=======
+</body>
+</html>
+>>>>>>> parent of a2e3507... added footer layout to files
 =======
 </body>
 </html>
