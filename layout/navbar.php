@@ -1,5 +1,6 @@
 <?php
 require 'links.php';
+include('librarian/dbcon.php');
 ?>
 
 <body style="width: 100%;">

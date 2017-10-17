@@ -1,3 +1,7 @@
 <?php
-mysql_select_db('eb_lms',mysql_connect('localhost','root',''))or die(mysql_error());
+
+$con = mysqli_connect('localhost','root','')
+or die(mysqli_error());
+
+mysqli_select_db($con, 'library');
 ?>
