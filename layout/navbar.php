@@ -2,7 +2,7 @@
 require 'links.php';
 ?>
 
-<body style="background-color: green">
+<body style="width: 100%;">
 <div class="topnav">
             <div class="dropdown0">
 <a>&#9776;</a>
@@ -53,4 +53,4 @@ require 'links.php';
                 </div>
             </div>
         </div>
-<div class="content" style="background-color: white;">
+<div class="content">

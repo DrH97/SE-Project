@@ -106,6 +106,8 @@
 
 </div>
 
+</div>
+
 <script type="application/javascript">
 	var slideIndex = 1;
 	showSlides(slideIndex);

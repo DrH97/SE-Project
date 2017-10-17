@@ -4,7 +4,7 @@
 
 <style>
 
-ul{
+/*ul{
 list-style-type:none;
 margin:0;
 padding:0;
@@ -22,7 +22,7 @@ padding: 14px 16px;
 }
 li a:hover{
 background-color:#111;
-}
+}*/
 </style>
 
 <form >
@@ -43,6 +43,7 @@ background-color:#111;
 </fieldset>
 </form>
 
+</div>
 <?php
   @include 'layout/footer.php';
  ?>

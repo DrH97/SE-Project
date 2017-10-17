@@ -11,8 +11,8 @@
   <!-- Internal links -->
   <!-- css -->
   <link rel="stylesheet" href="css/books.css">
-	<link rel="stylesheet" href="css/Style.css">
-	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" href="css/new.css">
+	<!-- <link rel="stylesheet" href="css/navigation.css"> -->
 
 	<script src="Book1.js"></script>
 </head>
