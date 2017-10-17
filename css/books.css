@@ -169,12 +169,15 @@ input[type=text]:focus, input[type=text]:active {
 	float: left;
 	margin: 5px;
 	cursor: pointer;
+	height: 300px;
 }
 
 .card img{
-	height: 230px;
+	height: 200px;
 	width: auto;
-	margin: auto;
+	margin: 5px auto;
+	padding: auto;
+	/*border-bottom: 1px solid black;*/
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -185,6 +188,9 @@ input[type=text]:focus, input[type=text]:active {
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+		overflow: hidden;
+		margin: auto;
+		padding: 5px;
 }
 
 /* The Modal (background) */
@@ -223,7 +229,7 @@ input[type=text]:focus, input[type=text]:active {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+.modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -231,12 +237,12 @@ input[type=text]:focus, input[type=text]:active {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
+    from {-webkit-transform:scale(0)}
     to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
+    from {transform:scale(0)}
     to {transform:scale(1)}
 }
 
@@ -276,7 +282,7 @@ input[type=text]:focus, input[type=text]:active {
 	.mySlides img{
 		height: 100%;
 	}
-	
+
 	.searchbar{
 		width: 70%;
 	}
@@ -284,11 +290,11 @@ input[type=text]:focus, input[type=text]:active {
 }
 
 @-webkit-keyframes fade {
- 	from {opacity: .4} 
+ 	from {opacity: .4}
  	to {opacity: 1}
 }
 
 @keyframes fade {
- 	from {opacity: .4} 
+ 	from {opacity: .4}
  	to {opacity: 1}
 }

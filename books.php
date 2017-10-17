@@ -43,53 +43,29 @@
 </div>
 
 <div class="mainsection">
-	<div class="card" id="myCard">
-	  <img id="myImg" src="images/eldest.png" alt="Avatar">
-	  <div class="container">
-		<h4><b>Eldest</b></h4>
-		<p>Christopher paolini</p>
-	  </div>
+
+	  <div class>
+		<select style="width: 200px;" name="cat_id" class="chzn-select" required/>
+	<?php $result1 =  mysqli_query($con, "select * from category")or die(mysqli_error($con));
+			?><option value=""></option><?php
+		while ($row1=mysqli_fetch_array($result1)){ ?>
+			<option value="<?php echo $row1['category_id']; ?>"><?php echo $row1['classname']; ?></option>
+		<?php } ?>
+		</select>
 	</div>
 
-	<div class="card">
-	  <img src="images/brisingr.jpg" alt="Avatar">
-	  <div class="container">
-		<h4><b>Brisinger</b></h4>
-		<p>Christopher Paolini</p>
-	  </div>
-	</div>
+	<?php $result =  mysqli_query($con, "select * from book")or die(mysqli_error($con));
+	while ($row=mysqli_fetch_array($result)){
+		//var_dump($row1[0]);?>
 
-	<div class="card">
-	  <img src="images/inheritance.jpg" alt="Avatar">
-	  <div class="container">
-		<h4><b>Inheritance</b></h4>
-		<p>Christopher Paolini</p>
-	  </div>
-	</div>
-
-	<div class="card">
-	  <img src="images/eldest.png" alt="Avatar">
-	  <div class="container">
-		<h4><b>Eldest</b></h4>
-		<p>Christopher paolini</p>
-	  </div>
-	</div>
-
-	<div class="card">
-	  <img src="images/brisingr.jpg" alt="Avatar">
-	  <div class="container">
-		<h4><b>Brisinger</b></h4>
-		<p>Christopher Paolini</p>
-	  </div>
-	</div>
-
-	<div class="card">
-	  <img src="images/inheritance.jpg" alt="Avatar">
-	  <div class="container">
-		<h4><b>Inheritance</b></h4>
-		<p>Christopher Paolini</p>
-	  </div>
-	</div>
+		<div class="card" id="myCard">
+		  <img id="myImg" src="images/eldest.png" alt="Avatar">
+		  <div class="container">
+			<h5><b><?php echo $row['book_title']; ?></b></h5>
+			<p><?php echo $row['author']; ?></p>
+		  </div>
+		</div>
+	<?php } ?>
 
 	<!-- The Modal -->
 <div id="myModal" class="modal">
