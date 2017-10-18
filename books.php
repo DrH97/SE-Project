@@ -1,7 +1,7 @@
 <?php
 	include 'layout/navbar.php';
 ?>
-
+<div class="main">
 <div class="slide sparallax slideshow-container">
 
 		<div class="mySlides sfade">
@@ -84,6 +84,8 @@
 
 </div>
 
+</div>
+
 <script type="application/javascript">
 	var slideIndex = 1;
 	showSlides(slideIndex);
@@ -113,6 +115,6 @@
 	}
 
 </script>
-
-</body>
-</html>
+<footer1>
+	<?php @include 'layout/footer.php'; ?>
+</footer1>

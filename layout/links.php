@@ -10,9 +10,7 @@
 
   <!-- Internal links -->
   <!-- css -->
-  <link rel="stylesheet" href="css/books.css">
 	<link rel="stylesheet" href="css/new.css">
-	<!-- <link rel="stylesheet" href="css/navigation.css"> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
