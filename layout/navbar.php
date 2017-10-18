@@ -13,7 +13,7 @@ session_start();
       // $email = $_GET['email'];
 
       $result = mysqli_query($con, "insert into member (firstname, lastname, email, password)
-       values ('$fname','$lname','$email','$pass')")or die(mysqli_error());
+       values ('$fname','$lname','$email','$pass')")or die(mysqli_error($con));
       //var_dump($result);
     }
 
@@ -22,7 +22,7 @@ session_start();
       $pass = $_POST['pass'];
       // $email = $_GET['email'];
 
-      $result =  mysqli_query($con, "select * from member where email = '$email'")or die(mysqli_error());
+      $result =  mysqli_query($con, "select * from member where email = '$email'")or die(mysqli_error($con));
         if ($result) {
           while ($row = mysqli_fetch_array($result)) {
             if(password_verify($pass, $row['password'])){
@@ -43,27 +43,27 @@ session_start();
     <navtitle><strong> LIBRARY SYSTEM </strong></navtitle>
         <div class="links">
             <ul>
-                <li><a href="homepage.php"class="active"> Home </a></li>
-                <li><a href="librarian/index.php"> Librarian </a></li>
-                <li><a href="books.php"> Books </a></li>
-                <li><a href="Student.php"> Student </a></li>
-                <li><a href="fines.php"> Fines </a></li>
+                <li><a href="../homepage.php" class="active"> Home </a></li>
+                <li><a href="../librarian/index.php"> Librarian </a></li>
+                <li><a href="../books.php"> Books </a></li>
+                <li><a href="../student.php"> Student </a></li>
+                <li><a href="../fines.php"> Fines </a></li>
             </ul>
         </div>
   </div>
     <div class="account">
         <div class="dropdown3">
-          <a id="search"class="nav-sidelinks">&#128269;</a>
+          <a id="search" class="nav-sidelinks">&#128269;</a>
             <div class="dropdown-search">
                 <form method="get" action="?" id="search">
-                    <input id="0 "type="search" class="details" placeholder="Search..."/>
+                    <input id="0" type="search" class="details" placeholder="Search..."/>
                 </form>
             </div>
         </div>
         <div class="dropdown1">
 
           <?php if (empty($_SESSION['name'])) { ?>
-            <a id="sign" class="nav-sidelinks" clicked=>Sign up</a>
+            <a id="sign" class="nav-sidelinks">Sign up</a>
             <div id="1" class="dropdown-signup">
                 <form method="post">
                     <input name="email" type="email" class="details" placeholder="john@smith.com" required><br>
@@ -93,7 +93,7 @@ session_start();
                 </form>
             </div>
             <?php }else { ?>
-              <a class="nav-sidelinks" href="logout.php">Logout</a>
+              <a class="nav-sidelinks" href="../logout.php">Logout</a>
             <?php } ?>
         </div>
     </div>
@@ -118,14 +118,14 @@ session_start();
         signbtn.onclick = function() {
             signup.style.display = "block";
             login.style.display = "none";
-        }
+        };
         logbtn.onclick = function() {
             login.style.display = "block";
             signup.style.display = "none";
-        }
+        };
         searchbtn.onclick = function() {
             search.style.display = "block";
-        }
+        };
 
         // // When the user clicks on <span> (x), close the modal
         // span.onclick = function() {

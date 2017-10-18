@@ -3,7 +3,7 @@
  ?>
 <div id="image">
     <div class="display">
-        <img src="library system.jpg" class="imgHome" alt=""/>
+        <img src="images/library system.jpg" class="imgHome" alt=""/>
         <div class="img-text">
             <h3> HELLO, WELCOME TO OUR LIBRARY </h3>
         </div>

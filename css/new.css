@@ -7,13 +7,9 @@
     font: 1em Georgia, Roboto, Arial, Helvetica, sans-serif;
 }
 .topnav{
-    mtext-shadow: 0px 0px 1px #3a3b3d;
     height: 45.5px;
-    fwidth: 100%;
-    swhite-space: nowrap;
     background-color: #333;
     overflow: hidden;
-    lborder-bottom: 1px solid #857D7A;
     z-index: 1;
 }
 .topnav a, navtitle{

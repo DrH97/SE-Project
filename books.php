@@ -45,7 +45,7 @@
 <div class="mainsection">
 
 	  <div class>
-		<select style="width: 200px;" name="cat_id" class="chzn-select" required/>
+		<select name="cat_id" class="chzn-select" required>
 	<?php $result1 =  mysqli_query($con, "select * from category")or die(mysqli_error($con));
 			?><option value=""></option><?php
 		while ($row1=mysqli_fetch_array($result1)){ ?>
@@ -84,7 +84,7 @@
 
 </div>
 
-</div>
+<!--</div>-->
 
 <script type="application/javascript">
 	var slideIndex = 1;
