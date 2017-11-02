@@ -194,6 +194,8 @@ footer a:hover{
 .slideshow-container {
   position: relative;
   margin: auto;
+  height: 320px;
+  overflow: hidden;
 }
 
 .mySlides {
